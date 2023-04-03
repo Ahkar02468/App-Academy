@@ -15,22 +15,17 @@ setKeyInObject(obj1, "num", 3); // => {str: "hello", num: 3}
 
 function setKeyInObject(obj, string, value) {
   // Your code here
-  // let keyAndObject = {};
-  // // if(obj === null){
-  // //   keyAndObject = {string, value};
-  // // }
-  let keyAndObject = ""
-  for(let key in obj){
-    let keys = key;
-    console.log(keys);
-    keyAndObject = { keys:obj[key], string: value}
-  }
-  // const keyAndObject = {obj.key:obj.value, string:value};
-  return console.log(keyAndObject);
+  let str = string;
+  let  newObj = obj;
+  newObj[str] = value;
+ return newObj;
 }
 
+// let obj1 = {}
+// setKeyInObject(obj1, "apple", "yum");
+
 let obj = {str: "hello"}
-setKeyInObject(obj, "num", "3"); // => {apple: "yum"}
+console.log(setKeyInObject(obj, "num", "3")); // => {apple: "yum"}
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 module.exports = setKeyInObject;
