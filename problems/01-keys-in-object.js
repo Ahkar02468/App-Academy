@@ -30,8 +30,7 @@ console.log(Animalkey); // => ["dog", "cat", "bison"]
 
 let foods = {apple: "tart", lemon: "sour", mango: "sweet"}
 const foodsKeys = keysInObject(foods);
-console.log(foodsKeys);
- // => ["apple", "lemon", "mango"]
+console.log(foodsKeys); //=> ["apple", "lemon", "mango"]
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 module.exports = keysInObject;
