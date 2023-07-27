@@ -1,3 +1,2 @@
 *.zip
-practice-for-week-04-single-responsibility-principle/node_modules/
-practice-for-week-04-DRY/node_modules/
+*/node_modules
