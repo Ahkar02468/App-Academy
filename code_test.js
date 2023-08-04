@@ -1,21 +1,19 @@
-class Task {
-  static taskList = [];
-
-  static printTaskList() {
-    console.log(this.taskList);
+class Fruit {
+  constructor(color, taste) {
+    this.color = color;
+    this.taste = taste;
   }
 
-  static addTask(task) {
-    this.taskList.push(task);
-  }
-
-  constructor(taskDetail) {
-    this.taskDetail = taskDetail;
-    Task.addTask(this);
+  eat() {
+    console.log(`You ate a ${this.constructor.name}.`);
   }
 }
 
-const laundry = new Task('laundry');
-// console.log(laundry);
-// laundry.printTaskList()
-console.log(laundry.taskList);
+class aapple extends Fruit {
+  constructor() {
+    super('red', 'sweet');
+  }
+}
+
+const apple = new aapple();
+console.log(apple.eat());
