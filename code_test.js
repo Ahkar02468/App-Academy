@@ -1,19 +1,19 @@
-class Fruit {
-  constructor(color, taste) {
-    this.color = color;
-    this.taste = taste;
-  }
-
-  eat() {
-    console.log(`You ate a ${this.constructor.name}.`);
-  }
+class Business{
+    toString(){
+        return 'Give us money';
+    }
 }
 
-class aapple extends Fruit {
-  constructor() {
-    super('red', 'sweet');
-  }
+class Retail extends Business{
+    toString(){
+        return 'Buy some stuff!!'
+    }
 }
 
-const apple = new aapple();
-console.log(apple.eat());
+class AutoRepairShop extends Business{};
+
+class Charity{};
+
+console.log(new Retail().toString());
+console.log(new AutoRepairShop().toString())
+console.log(new Charity().toString());
